@@ -1,3 +1,7 @@
 @extends('layouts.app')
 
-{{-- @yield('name') --}}
+@section('content')
+    @foreach ($fumetti as $fumetto)
+        <p>{{$fumetto['title']}}</p>
+    @endforeach
+@endsection
